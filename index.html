@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="box">
+            <div class="prenom">
+                <label for="">Votre prénom</label>
+                <input type="text" name="prenom" id="prenom" />
+                <input type="submit" id="btnEnvoi" value="Envoyer" />
+                <p id="affichage"></p>
+            </div>
+            <div class="connexion" id="divConnexion">
+                <div class="connexiontop">
+                    <input type="checkbox" id="checkbox" />
+                    <label for="checkbox" class="labelcheckbox">Thème sombre</label>
+                </div>
+                <div class="connexionbottom" id="connexionbottom">
+                    <input type="submit" id="btnConnexion" value="Me connecter" />
+                    <input
+                        type="submit"
+                        id="btnDeconnexion"
+                        value="Me déconnecter"
+                    />
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+    </body>
+</html>
