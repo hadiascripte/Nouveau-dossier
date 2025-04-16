@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Exemple API avec Fetch</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+            }
+            input,
+            textarea,
+            button {
+                display: block;
+                margin-top: 10px;
+                width: 300px;
+            }
+            #posts {
+                margin-top: 20px;
+            }
+            .post {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Liste des posts (GET)</h1>
+        <button id="loadPostsBtn">Charger les posts</button>
+        <div id="posts">
+            <!-- <div class="post">
+                  <h2>Test</h2>
+                  <p>texte</p>
+            </div> -->
+        </div>
+        <h2>Créer un post (POST)</h2>
+        <input type="text" id="title" placeholder="Titre" />
+        <textarea id="body" placeholder="Contenu du post"></textarea>
+        <button id="submitBtn">Envoyer le post</button>
+        <div id="reponse"></div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
