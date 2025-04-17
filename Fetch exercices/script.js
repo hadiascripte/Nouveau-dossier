@@ -53,9 +53,10 @@ btnRecup.addEventListener("click", (e) => {
             messages.forEach((message) => {
                 const divMessage = document.createElement("div");
                 divMessage.classList.add("styleMessage");
-                divMessage.innerHTML = `<h3> ${message.prenom} </h3>
-            <p>" ${message.message} "
-            <Posté le ${message.date}</p>`;
+                divMessage.innerHTML = `<h4> ${message.prenom} </h4>
+            <p>" ${message.message} "</p>
+
+            <p>Posté le ${message.date}</p>`;
 
                 divMessages.appendChild(divMessage);
                 console.log(divMessage);
