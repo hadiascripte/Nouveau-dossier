@@ -11,6 +11,7 @@ console.log(postsContainer);
 // CHARGER LES POSTS avec une fonction async pour laisser le tmeps de chargement de récupération des données.
 
 async function chargerPosts() {
+    const postsContainer = document.querySelector("#posts");
     try {
         const reponse = await fetch(
             "https://jsonplaceholder.typicode.com/posts?_limit=10"

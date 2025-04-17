@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact sans formData</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+    }
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+    input, textarea, button {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+    }
+    #resultat {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .styleMessage{
+      border: 1px solid;
+      border-radius: 10px;
+      padding: 0 10px;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Envoyer un message</h1>
+  <form id="contact-form">
+    <input type="text" id="prenom" placeholder="Votre prénom" required />
+    <textarea id="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <div id="resultat"></div>
+<form action="" id="recuprerMessage">
+  <h2>Récuperer les messages</h2>
+  <button id="chargerMessage">Charger les messages</button>
+  <div id="messages"></div>
+</form>
+</body>
+<script src="script.js"></script>
+</html>
