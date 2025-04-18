@@ -62,6 +62,7 @@ btnRecup.addEventListener("click", (e) => {
                 console.log(divMessage);
             });
         } catch (error) {
+            
             console.log("Erreur lors du chargement des messagess");
             alert("Un problème est survenu lors du chargement des messages");
         }
